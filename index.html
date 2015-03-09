@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Task of RIA </title>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<script language="JavaScript" src = "./js/node.js">
+	</script>
+
+	<script language="JavaScript" src = "./js/map.js">
+	</script>
+	
+	<script language="JavaScript" src = "./js/timeout.js">
+	</script>
+	
+	<script language="JavaScript">
+	<!--
+		var obj = {
+		  "database.host": "127.0.0.1",
+		  "database.user": "test",
+		  "database.password": "qwerty",
+		  "rest.photo.host": "127.0.0.2",
+		  "rest.users.host": "127.0.0.3",
+		  "rest.users.password": "p@ssw0rd",
+		  "baseUrl": "test.com",
+		  "limit": 10
+		};
+	//-->
+	</script>
+</head>
+
+<body>	
+	<center>
+		<table>
+			<tr>
+				<td>
+					<form id="form">
+						<b>Enter KEY:</b><input type="text" id="txtKey"> <b>Enter VALUE:</b><input type="text" id="txtValue">
+						<input type="button" value="Add <Key,Value>" onClick="addKeyValue()">
+						<hr>
+						
+						<textarea rows="10" cols="90" name="text" id="textKV" readonly>
+						</textarea>
+						<hr>
+						
+						<center>
+							<input type="button" value="Convert to JSON and show" onClick="convertToJsonAndShow()"> 
+							<input type="reset" value="Erase Form" onclick="eraseForm()">
+						</center>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</center>
+	<hr>
+		
+	<script language="JavaScript">
+	<!--
+		var tree = new Node( "root", null, null );
+		tree.fillFromObject( obj );
+		//alert( tree.toJSON() );
+		var json = tree.toJSON();
+		
+		document.write("<form>");
+		document.write("<center>");
+		document.write("<input type='button' value='Pause' onClick='stopDivJson()'/>   ");
+		document.write("<input type='button' value='Resume' onClick='moveDivJson()'/>");
+		document.write("</center>");
+		document.write("</form>");
+		document.write("<div id='jsonID' onMouseOver='stopDivJson()'>");
+		document.write("<pre>");
+		document.write(json);
+		document.write("</pre>");
+		document.write("</div>");
+		moveDivJson();
+	//-->
+	</script>	
+	
+</body>
+</html>
